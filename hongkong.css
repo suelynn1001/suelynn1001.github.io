@@ -1,0 +1,136 @@
+html, body{
+	margin:0;
+	padding: 0;
+}
+nav {
+	border:1px solid black; 
+	background-color: black;
+	width:100%;
+	margin-left:0;
+	font: 15px comic-sans;
+	position: fixed;
+	display: block;
+	z-index: 1;
+	top: 0;
+}
+
+
+
+#list {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	padding: 0;
+}
+
+nav ul li {
+	display: flex;
+	color: white;
+
+}
+
+.parent {
+	width: 100%;
+	margin-top: 50px;
+	position: relative;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.welcome {
+	position: absolute;
+	bottom: 4px;
+	font-size: 40px;
+	color: white;
+	text-align: center;
+}
+
+#abouthk{
+	background-color: beige;
+	padding-top: 2px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	margin-top: auto;
+}
+
+article section h1 {
+	color: grey; 
+	text-decoration: underline double;
+	font-family: avenir;
+	border-radius:;
+	}
+
+#together {
+	text-align: center;
+}
+
+.photoparent {position: relative;
+display: inline-block;}
+
+.writings {position: absolute;
+bottom: 4px;
+color: white;
+background-color: rgb(35,20,20,0.5);
+width: 340px;
+text-align: center;
+padding:10px;
+margin-left:10px}
+
+.imagesize {width:360px;height: 240px;
+display: block;
+margin: 5px 10px;
+
+}
+
+
+.writings:hover {
+	background-color: beige;
+	color: black;
+	display: line;
+}
+
+
+.flip-container{ 
+position: relative;
+width:360px;
+height: 240px; }
+
+.flipper{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform-style: preserve-3d;
+	transition: all 2s linear;
+}
+
+.flipper:hover{
+	transform: rotateY(180deg);
+}
+
+.front {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+}
+
+.back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
